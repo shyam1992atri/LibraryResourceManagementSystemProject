@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1490,705" id="umlPhase1" metadata="uml2-1.0" initialized="true" zoom="0.75" tag="1000" key="32303037303533312D31303030204C6962726172795265736F757273654D616E6167656D656E7453797374656D2F534859414D2050524153414420562041545249">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.1 //@children.1/@sourceConnections.1" name="Security" location="1125,570" size="176,103" id="umlPhase1/Security" runTimeClassModel="securityGardNumber,guideMember(),exitNumber">
+    <children xsi:type="editmodel:CompartmentEditModel" size="153,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="exitNumber" id="umlPhase1/Security#exitNumber"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="securityGardNumber" id="umlPhase1/Security#securityGardNumber"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="94,18">
+      <children xsi:type="editmodel:MethodEditModel" name="guideMember" id="umlPhase1/Security#guideMember()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Kiosks" location="30,15" size="133,103" id="umlPhase1/Kiosks" runTimeClassModel="libraryName,displayMenu(),libraryID">
+    <children xsi:type="editmodel:CompartmentEditModel" size="110,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="libraryID" id="umlPhase1/Kiosks#libraryID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="libraryName" id="umlPhase1/Kiosks#libraryName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="90,18">
+      <children xsi:type="editmodel:MethodEditModel" name="displayMenu" id="umlPhase1/Kiosks#displayMenu()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="assists" autoLocated="true" id="umlPhase1/Kiosks@kiosks+umlPhase1/CollegeMembers@collegeMembers" source="//@children.1" target="//@children.4" targetEnd="//@children.1/@sourceConnections.0/@children.1" label="//@children.1/@sourceConnections.0/@children.2" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kiosks" location="133,51" id="umlPhase1/Kiosks@kiosks+umlPhase1/CollegeMembers@collegeMembers|umlPhase1/Kiosks#kiosks" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - kiosks" location="169,41" size="49,17" fontInfo="Times New Roman-11-0" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="169,72" size="4,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="collegeMembers" location="0,51" id="umlPhase1/Kiosks@kiosks+umlPhase1/CollegeMembers@collegeMembers|umlPhase1/CollegeMembers#collegeMembers" multiplicityLabel="//@children.1/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + collegeMembers" location="314,14" size="113,17" fontInfo="Times New Roman-11-0" automaticRelocationAllowed="false" locationOnWireFromSource="75.0" distanceFromWire="42.99999999999999" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="417,72" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="assists" size="44,17" fontInfo="Times New Roman-11-1" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="guides to" autoLocated="true" id="umlPhase1/Security@security+umlPhase1/Kiosks@kiosks" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.1/@children.1" label="//@children.1/@sourceConnections.1/@children.2" sourceEnd="//@children.1/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kiosks" location="133,93" id="umlPhase1/Security@security+umlPhase1/Kiosks@kiosks|umlPhase1/Kiosks#kiosks" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.1/@sourceConnections.1/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + kiosks" location="169,87" size="42,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="169,115" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="security" location="10,0" id="umlPhase1/Security@security+umlPhase1/Kiosks@kiosks|umlPhase1/Security#security" multiplicityLabel="//@children.1/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - security" location="1141,548" size="49,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1109,548" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="guides to" size="44,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="providesDetails" autoLocated="true" id="umlPhase1/Kiosks@kiosks+umlPhase1/DataCentre@dataCentre" source="//@children.1" target="//@children.16" targetEnd="//@children.1/@sourceConnections.2/@children.1" label="//@children.1/@sourceConnections.2/@children.2" sourceEnd="//@children.1/@sourceConnections.2/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kiosks" location="133,93" id="umlPhase1/Kiosks@kiosks+umlPhase1/DataCentre@dataCentre|umlPhase1/Kiosks#kiosks" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.2/@children.0/@children.1" roleLabel="//@children.1/@sourceConnections.2/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - kiosks" location="122,116" size="40,14" automaticRelocationAllowed="false" locationOnWireFromSource="-76.0" distanceFromWire="-15.00000000000003" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="169,115" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataCentre" location="10,0" id="umlPhase1/Kiosks@kiosks+umlPhase1/DataCentre@dataCentre|umlPhase1/DataCentre#dataCentre" multiplicityLabel="//@children.1/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + dataCentre" location="265,220" size="65,14" automaticRelocationAllowed="false" locationOnWireFromSource="53.0" distanceFromWire="23.00000000000001" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="249,219" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="providesDetails" location="191,114" size="74,14" automaticRelocationAllowed="false" locationOnWireFromSource="10.0" distanceFromWire="-13.000000000000002" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.12/@sourceConnections.0 //@children.11/@sourceConnections.0 //@children.13/@sourceConnections.0 //@children.16/@sourceConnections.3" name="detectorExit" location="831,405" size="170,103" id="umlPhase1/detectorExit" runTimeClassModel="resourceID,triggerAlarm(),resourceBarCodeDetect()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="106,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="resourceID" id="umlPhase1/detectorExit#resourceID"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="147,36">
+      <children xsi:type="editmodel:MethodEditModel" name="resourceBarCodeDetect" id="umlPhase1/detectorExit#resourceBarCodeDetect()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="triggerAlarm" id="umlPhase1/detectorExit#triggerAlarm()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="if alaram does not trigger" autoLocated="true" id="umlPhase1/detectorExit@detectorExit+umlPhase1/Exit@exit" source="//@children.2" target="//@children.3" targetEnd="//@children.2/@sourceConnections.0/@children.1" label="//@children.2/@sourceConnections.0/@children.2" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="detectorExit" location="113,103" id="umlPhase1/detectorExit@detectorExit+umlPhase1/Exit@exit|umlPhase1/detectorExit#detectorExit" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - detectorExit" location="870,507" size="67,14" automaticRelocationAllowed="false" locationOnWireFromSource="-22.0" distanceFromWire="-41.0" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="919,515" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="exit" location="56,0" id="umlPhase1/detectorExit@detectorExit+umlPhase1/Exit@exit|umlPhase1/Exit#exit" multiplicityLabel="//@children.2/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + exit" location="951,543" size="29,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="919,543" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="if alaram does not trigger" size="120,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="if alaram triggers" autoLocated="true" id="umlPhase1/Security@security+umlPhase1/detectorExit@detectorExit" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.1/@children.1" label="//@children.2/@sourceConnections.1/@children.2" sourceEnd="//@children.2/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="detectorExit" location="170,93" id="umlPhase1/Security@security+umlPhase1/detectorExit@detectorExit|umlPhase1/detectorExit#detectorExit" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.2/@sourceConnections.1/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + detectorExit" location="1009,577" size="69,14" automaticRelocationAllowed="false" locationOnWireFromSource="-24.0" distanceFromWire="-87.0" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1007,504" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="security" location="10,0" id="umlPhase1/Security@security+umlPhase1/detectorExit@detectorExit|umlPhase1/Security#security" multiplicityLabel="//@children.2/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - security" location="1141,548" size="49,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1109,548" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="if alaram triggers" size="81,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0" name="Exit" location="888,564" size="113,57" id="umlPhase1/Exit" runTimeClassModel="exitNumber">
+    <children xsi:type="editmodel:CompartmentEditModel" size="90,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="exitNumber" id="umlPhase1/Exit#exitNumber"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="CollegeMembers" location="429,15" size="177,175" id="umlPhase1/CollegeMembers" runTimeClassModel="phoneNumber,displayAccountDetails(),displayVereficationDetails(),recieveLocation(),memberName,displayResourceStatus(),memberID">
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="memberID" id="umlPhase1/CollegeMembers#memberID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="memberName" id="umlPhase1/CollegeMembers#memberName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="phoneNumber" id="umlPhase1/CollegeMembers#phoneNumber"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="154,72">
+      <children xsi:type="editmodel:MethodEditModel" name="displayAccountDetails" id="umlPhase1/CollegeMembers#displayAccountDetails()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayResourceStatus" id="umlPhase1/CollegeMembers#displayResourceStatus()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayVereficationDetails" id="umlPhase1/CollegeMembers#displayVereficationDetails()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="recieveLocation" id="umlPhase1/CollegeMembers#recieveLocation()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="accesses" autoLocated="true" id="umlPhase1/CollegeMembers@collegeMembers+umlPhase1/Services@services" source="//@children.4" target="//@children.14" targetEnd="//@children.4/@sourceConnections.0/@children.1" label="//@children.4/@sourceConnections.0/@children.2" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="collegeMembers" location="177,57" id="umlPhase1/CollegeMembers@collegeMembers+umlPhase1/Services@services|umlPhase1/CollegeMembers#collegeMembers" attachSource="true" multiplicityLabel="//@children.4/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.4/@sourceConnections.0/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - collegeMembers" location="614,43" size="110,17" fontInfo="Times New Roman-11-0" automaticRelocationAllowed="false" locationOnWireFromSource="-128.0" distanceFromWire="21.0" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="612,79" size="4,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="services" location="0,42" id="umlPhase1/CollegeMembers@collegeMembers+umlPhase1/Services@services|umlPhase1/Services#services" multiplicityLabel="//@children.4/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.4/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + services" location="837,43" size="64,17" fontInfo="Times New Roman-11-0" automaticRelocationAllowed="false" locationOnWireFromSource="72.0" distanceFromWire="21.0" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="978,79" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="accesses" size="58,17" fontInfo="Times New Roman-11-1" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="can search" autoLocated="true" id="umlPhase1/CollegeMembers@collegeMembers+umlPhase1/LibraryResource@libraryResource" source="//@children.4" target="//@children.9" targetEnd="//@children.4/@sourceConnections.1/@children.1" label="//@children.4/@sourceConnections.1/@children.2" sourceEnd="//@children.4/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="collegeMembers" location="98,175" id="umlPhase1/CollegeMembers@collegeMembers+umlPhase1/LibraryResource@libraryResource|umlPhase1/CollegeMembers#collegeMembers" attachSource="true" multiplicityLabel="//@children.4/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.4/@sourceConnections.1/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - collegeMembers" location="539,188" size="88,14" automaticRelocationAllowed="false" locationOnWireFromSource="-16.0" distanceFromWire="57.0" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="515,196" size="4,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="libraryResource" location="77,0" id="umlPhase1/CollegeMembers@collegeMembers+umlPhase1/LibraryResource@libraryResource|umlPhase1/LibraryResource#libraryResource" multiplicityLabel="//@children.4/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.4/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + libraryResource" location="530,216" size="89,14" automaticRelocationAllowed="false" locationOnWireFromSource="11.999999999999998" distanceFromWire="47.99999999999999" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="515,212" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="can search" size="55,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.16/@sourceConnections.2" name="RemainderNotification" location="15,347" size="184,175" id="umlPhase1/RemainderNotification" runTimeClassModel="memberPhone,sendTextNotification(),dueDate,memberName,sendEmailNotification(),memberID,memberEmail">
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="dueDate" id="umlPhase1/RemainderNotification#dueDate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="memberEmail" id="umlPhase1/RemainderNotification#memberEmail"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="memberID" id="umlPhase1/RemainderNotification#memberID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="memberName" id="umlPhase1/RemainderNotification#memberName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="memberPhone" id="umlPhase1/RemainderNotification#memberPhone"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="131,36">
+      <children xsi:type="editmodel:MethodEditModel" name="sendEmailNotification" id="umlPhase1/RemainderNotification#sendEmailNotification()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sendTextNotification" id="umlPhase1/RemainderNotification#sendTextNotification()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.16/@sourceConnections.1" name="Location" location="316,360" size="138,93" id="umlPhase1/Location" runTimeClassModel="stackSection,floorNumber,rackNumber">
+    <children xsi:type="editmodel:CompartmentEditModel" size="115,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="floorNumber" id="umlPhase1/Location#floorNumber"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="stackSection" id="umlPhase1/Location#stackSection"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rackNumber" id="umlPhase1/Location#rackNumber"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Journals" location="495,510" size="160,175" id="umlPhase1/Journals" runTimeClassModel="areaOfInterest,author,availablity,displayStatus(),sendLocationDetails(),displayLocationDetails(),journalTitle">
+    <children xsi:type="editmodel:CompartmentEditModel" size="123,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="areaOfInterest" id="umlPhase1/Journals#areaOfInterest"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="author" id="umlPhase1/Journals#author"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="availablity" id="umlPhase1/Journals#availablity"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="journalTitle" id="umlPhase1/Journals#journalTitle"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,54">
+      <children xsi:type="editmodel:MethodEditModel" name="displayLocationDetails" id="umlPhase1/Journals#displayLocationDetails()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayStatus" id="umlPhase1/Journals#displayStatus()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sendLocationDetails" id="umlPhase1/Journals#sendLocationDetails()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="umlPhase1/LibraryResource&lt;-umlPhase1/Journals" source="//@children.7" target="//@children.9" targetEnd="//@children.7/@sourceConnections.0/@children.1" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="55,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="100,85"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CDandDVD" location="675,510" size="160,175" id="umlPhase1/CDandDVD" runTimeClassModel="tutorDetails,areaOfInterest,displayStatus(),sendLocationDetails(),ageRestriction,cdOrDVDtitle,displayLocationDetails()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="123,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="ageRestriction" id="umlPhase1/CDandDVD#ageRestriction"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="areaOfInterest" id="umlPhase1/CDandDVD#areaOfInterest"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="cdOrDVDtitle" id="umlPhase1/CDandDVD#cdOrDVDtitle"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tutorDetails" id="umlPhase1/CDandDVD#tutorDetails"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,54">
+      <children xsi:type="editmodel:MethodEditModel" name="displayLocationDetails" id="umlPhase1/CDandDVD#displayLocationDetails()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayStatus" id="umlPhase1/CDandDVD#displayStatus()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sendLocationDetails" id="umlPhase1/CDandDVD#sendLocationDetails()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="umlPhase1/LibraryResource&lt;-umlPhase1/CDandDVD" source="//@children.8" target="//@children.9" targetEnd="//@children.8/@sourceConnections.0/@children.1" sourceEnd="//@children.8/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="18,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="108,85"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.1 //@children.10/@sourceConnections.0 //@children.7/@sourceConnections.0 //@children.8/@sourceConnections.0 //@children.16/@sourceConnections.0" name="LibraryResource" location="450,234" size="156,85" id="umlPhase1/LibraryResource" runTimeClassModel="selectResourceType(),typeOfResource">
+    <children xsi:type="editmodel:CompartmentEditModel" size="133,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="typeOfResource" id="umlPhase1/LibraryResource#typeOfResource"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="129,18">
+      <children xsi:type="editmodel:MethodEditModel" name="selectResourceType" id="umlPhase1/LibraryResource#selectResourceType()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Books" location="315,510" size="160,175" id="umlPhase1/Books" runTimeClassModel="isbn,availablity,displayStatus(),sendLocationDetails(),displayLocationDetails(),bookTitle,bookID">
+    <children xsi:type="editmodel:CompartmentEditModel" size="110,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="availablity" id="umlPhase1/Books#availablity"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bookID" id="umlPhase1/Books#bookID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bookTitle" id="umlPhase1/Books#bookTitle"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="isbn" id="umlPhase1/Books#isbn"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,54">
+      <children xsi:type="editmodel:MethodEditModel" name="displayLocationDetails" id="umlPhase1/Books#displayLocationDetails()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayStatus" id="umlPhase1/Books#displayStatus()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sendLocationDetails" id="umlPhase1/Books#sendLocationDetails()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="umlPhase1/LibraryResource&lt;-umlPhase1/Books" source="//@children.10" target="//@children.9" targetEnd="//@children.10/@sourceConnections.0/@children.1" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="147,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="12,85"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CheckOUT" location="831,144" size="170,121" id="umlPhase1/CheckOUT" runTimeClassModel="resourceIssueStatus(),printRecept(),resourceID,resourceBarCodeDetect()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="106,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="resourceID" id="umlPhase1/CheckOUT#resourceID"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="147,54">
+      <children xsi:type="editmodel:MethodEditModel" name="printRecept" id="umlPhase1/CheckOUT#printRecept()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="resourceBarCodeDetect" id="umlPhase1/CheckOUT#resourceBarCodeDetect()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="resourceIssueStatus" id="umlPhase1/CheckOUT#resourceIssueStatus()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="to" autoLocated="true" id="umlPhase1/detectorExit@detectorExit+umlPhase1/CheckOUT@checkOUT" source="//@children.11" target="//@children.2" targetEnd="//@children.11/@sourceConnections.0/@children.1" label="//@children.11/@sourceConnections.0/@children.2" sourceEnd="//@children.11/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="checkOUT" location="85,121" id="umlPhase1/detectorExit@detectorExit+umlPhase1/CheckOUT@checkOUT|umlPhase1/CheckOUT#checkOUT" attachSource="true" multiplicityLabel="//@children.11/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.11/@sourceConnections.0/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + checkOUT" location="923,271" size="62,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="891,271" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="detectorExit" location="85,0" id="umlPhase1/detectorExit@detectorExit+umlPhase1/CheckOUT@checkOUT|umlPhase1/detectorExit#detectorExit" multiplicityLabel="//@children.11/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.11/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - detectorExit" location="923,383" size="67,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="905,383" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="to" size="9,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="to" autoLocated="true" id="umlPhase1/CheckOUT@checkOUT+umlPhase1/Renewals@renewals" source="//@children.11" target="//@children.13" targetEnd="//@children.11/@sourceConnections.1/@children.1" label="//@children.11/@sourceConnections.1/@children.2" sourceEnd="//@children.11/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="checkOUT" location="170,78" id="umlPhase1/CheckOUT@checkOUT+umlPhase1/Renewals@renewals|umlPhase1/CheckOUT#checkOUT" attachSource="true" multiplicityLabel="//@children.11/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.11/@sourceConnections.1/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - checkOUT" location="1007,200" size="60,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1007,228" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="renewals" location="0,42" id="umlPhase1/CheckOUT@checkOUT+umlPhase1/Renewals@renewals|umlPhase1/Renewals#renewals" multiplicityLabel="//@children.11/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.11/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + renewals" location="1209,200" size="58,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1249,228" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="to" size="9,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="umlPhase1/Services&lt;-umlPhase1/CheckOUT" source="//@children.11" target="//@children.12/@sourceConnections.1" targetEnd="//@children.11/@sourceConnections.2/@children.1" sourceEnd="//@children.11/@sourceConnections.2/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="85,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="5,29"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CheckIN" location="645,144" size="178,193" id="umlPhase1/CheckIN" runTimeClassModel="printRecept(),resourceID,fineAmount(),enterResourceToDropBox(),fineAmount,resourceBarCodeDetect(),calculateFine(),resourceAcceptStatus()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="112,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="resourceID" id="umlPhase1/CheckIN#resourceID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fineAmount" id="umlPhase1/CheckIN#fineAmount"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="155,108">
+      <children xsi:type="editmodel:MethodEditModel" name="resourceBarCodeDetect" id="umlPhase1/CheckIN#resourceBarCodeDetect()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="calculateFine" id="umlPhase1/CheckIN#calculateFine()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="enterResourceToDropBox" id="umlPhase1/CheckIN#enterResourceToDropBox()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="fineAmount" id="umlPhase1/CheckIN#fineAmount()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="printRecept" id="umlPhase1/CheckIN#printRecept()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="resourceAcceptStatus" id="umlPhase1/CheckIN#resourceAcceptStatus()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="to" autoLocated="true" id="umlPhase1/detectorExit@detectorExit+umlPhase1/CheckIN@checkIN" source="//@children.12" target="//@children.2" targetEnd="//@children.12/@sourceConnections.0/@children.1" label="//@children.12/@sourceConnections.0/@children.2" sourceEnd="//@children.12/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="checkIN" location="178,183" id="umlPhase1/detectorExit@detectorExit+umlPhase1/CheckIN@checkIN|umlPhase1/CheckIN#checkIN" attachSource="true" multiplicityLabel="//@children.12/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.12/@sourceConnections.0/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + checkIN" location="829,305" size="50,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="829,333" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="detectorExit" location="10,0" id="umlPhase1/detectorExit@detectorExit+umlPhase1/CheckIN@checkIN|umlPhase1/detectorExit#detectorExit" multiplicityLabel="//@children.12/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.12/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - detectorExit" location="847,383" size="67,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="829,383" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="to" size="9,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.11/@sourceConnections.2 //@children.13/@sourceConnections.1" id="umlPhase1/Services&lt;-umlPhase1/CheckIN" source="//@children.12" target="//@children.14" targetEnd="//@children.12/@sourceConnections.1/@children.1" sourceEnd="//@children.12/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="89,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="89,85" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.11/@sourceConnections.1" name="Renewals" location="1275,180" size="170,139" id="umlPhase1/Renewals" runTimeClassModel="printRecept(),resourceID,resourceBarCodeDetect(),displayValidUpto(),displayRenewStatus()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="106,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="resourceID" id="umlPhase1/Renewals#resourceID"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="147,72">
+      <children xsi:type="editmodel:MethodEditModel" name="displayRenewStatus" id="umlPhase1/Renewals#displayRenewStatus()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayValidUpto" id="umlPhase1/Renewals#displayValidUpto()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="printRecept" id="umlPhase1/Renewals#printRecept()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="resourceBarCodeDetect" id="umlPhase1/Renewals#resourceBarCodeDetect()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="to" autoLocated="true" id="umlPhase1/detectorExit@detectorExit+umlPhase1/Renewals@renewals" source="//@children.13" target="//@children.2" targetEnd="//@children.13/@sourceConnections.0/@children.1" label="//@children.13/@sourceConnections.0/@children.2" sourceEnd="//@children.13/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="renewals" location="10,139" id="umlPhase1/detectorExit@detectorExit+umlPhase1/Renewals@renewals|umlPhase1/Renewals#renewals" attachSource="true" multiplicityLabel="//@children.13/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.13/@sourceConnections.0/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + renewals" location="1291,325" size="58,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1259,325" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="detectorExit" location="170,10" id="umlPhase1/detectorExit@detectorExit+umlPhase1/Renewals@renewals|umlPhase1/detectorExit#detectorExit" multiplicityLabel="//@children.13/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.13/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - detectorExit" location="1007,421" size="67,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="1007,393" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="to" size="9,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="umlPhase1/Services&lt;-umlPhase1/Renewals" source="//@children.13" target="//@children.12/@sourceConnections.1" targetEnd="//@children.13/@sourceConnections.1/@children.1" sourceEnd="//@children.13/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="85,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="1,1"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0 //@children.12/@sourceConnections.1" name="Services" location="990,30" size="181,85" id="umlPhase1/Services" runTimeClassModel="serviceType,displayAssiociatedService()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="112,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="serviceType" id="umlPhase1/Services#serviceType"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="158,18">
+      <children xsi:type="editmodel:MethodEditModel" name="displayAssiociatedService" id="umlPhase1/Services#displayAssiociatedService()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="umlPhase1/Services@services+umlPhase1/RequestNewResource@requestNewResource" source="//@children.14" target="//@children.15" targetEnd="//@children.14/@sourceConnections.0/@children.1" label="//@children.14/@sourceConnections.0/@children.2" sourceEnd="//@children.14/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="services" location="181,39" id="umlPhase1/Services@services+umlPhase1/RequestNewResource@requestNewResource|umlPhase1/Services#services" attachSource="true" multiplicityLabel="//@children.14/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.14/@sourceConnections.0/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - services" location="1177,47" size="52,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1177,75" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="requestNewResource" location="0,45" id="umlPhase1/Services@services+umlPhase1/RequestNewResource@requestNewResource|umlPhase1/RequestNewResource#requestNewResource" multiplicityLabel="//@children.14/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.14/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + requestNewResource" location="1199,10" size="119,14" automaticRelocationAllowed="false" locationOnWireFromSource="29.000000000000004" distanceFromWire="51.0" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1264,75" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.14/@sourceConnections.0" name="RequestNewResource" location="1290,24" size="180,85" id="umlPhase1/RequestNewResource" runTimeClassModel="resourceName,enterResourceName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="124,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="resourceName" id="umlPhase1/RequestNewResource#resourceName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="129,18">
+      <children xsi:type="editmodel:MethodEditModel" name="enterResourceName" id="umlPhase1/RequestNewResource#enterResourceName()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.2" name="DataCentre" location="265,240" size="113,29" id="umlPhase1/DataCentre" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="providesDetails" autoLocated="true" id="umlPhase1/LibraryResource@libraryResource+umlPhase1/DataCentre@dataCentre" source="//@children.16" target="//@children.9" targetEnd="//@children.16/@sourceConnections.0/@children.1" label="//@children.16/@sourceConnections.0/@children.2" sourceEnd="//@children.16/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataCentre" location="113,14" id="umlPhase1/LibraryResource@libraryResource+umlPhase1/DataCentre@dataCentre|umlPhase1/DataCentre#dataCentre" attachSource="true" multiplicityLabel="//@children.16/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.16/@sourceConnections.0/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + dataCentre" location="330,220" size="65,14" automaticRelocationAllowed="false" locationOnWireFromSource="-51.0" distanceFromWire="26.0" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="384,260" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="libraryResource" location="0,20" id="umlPhase1/LibraryResource@libraryResource+umlPhase1/DataCentre@dataCentre|umlPhase1/LibraryResource#libraryResource" multiplicityLabel="//@children.16/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.16/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - libraryResource" location="409,220" size="87,14" automaticRelocationAllowed="false" locationOnWireFromSource="39.0" distanceFromWire="26.0" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="438,260" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="providesDetails" size="74,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="contains" autoLocated="true" id="umlPhase1/DataCentre@dataCentre+umlPhase1/Location@location" source="//@children.16" target="//@children.6" targetEnd="//@children.16/@sourceConnections.1/@children.1" label="//@children.16/@sourceConnections.1/@children.2" sourceEnd="//@children.16/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataCentre" location="81,29" id="umlPhase1/DataCentre@dataCentre+umlPhase1/Location@location|umlPhase1/DataCentre#dataCentre" attachSource="true" multiplicityLabel="//@children.16/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.16/@sourceConnections.1/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - dataCentre" location="388,269" size="63,14" automaticRelocationAllowed="false" locationOnWireFromSource="-38.0" distanceFromWire="74.0" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="320,275" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="location" location="30,0" id="umlPhase1/DataCentre@dataCentre+umlPhase1/Location@location|umlPhase1/Location#location" multiplicityLabel="//@children.16/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.16/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + location" location="352,339" size="49,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="320,339" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="contains" size="41,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="sends" autoLocated="true" id="umlPhase1/RemainderNotification@remainderNotification+umlPhase1/DataCentre@dataCentre" source="//@children.16" target="//@children.5" targetEnd="//@children.16/@sourceConnections.2/@children.1" label="//@children.16/@sourceConnections.2/@children.2" sourceEnd="//@children.16/@sourceConnections.2/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataCentre" location="10,29" id="umlPhase1/RemainderNotification@remainderNotification+umlPhase1/DataCentre@dataCentre|umlPhase1/DataCentre#dataCentre" attachSource="true" multiplicityLabel="//@children.16/@sourceConnections.2/@children.0/@children.1" roleLabel="//@children.16/@sourceConnections.2/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + dataCentre" location="197,247" size="65,14" automaticRelocationAllowed="false" locationOnWireFromSource="-58.0" distanceFromWire="-44.99999999999999" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="249,275" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="remainderNotification" location="184,10" id="umlPhase1/RemainderNotification@remainderNotification+umlPhase1/DataCentre@dataCentre|umlPhase1/RemainderNotification#remainderNotification" multiplicityLabel="//@children.16/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.16/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - remainderNotification" location="205,363" size="111,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="205,335" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="sends" size="30,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="checksDetails" autoLocated="true" id="umlPhase1/DataCentre@dataCentre+umlPhase1/detectorExit@detectorExit" source="//@children.16" target="//@children.2" targetEnd="//@children.16/@sourceConnections.3/@children.1" label="//@children.16/@sourceConnections.3/@children.2" sourceEnd="//@children.16/@sourceConnections.3/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dataCentre" location="103,29" id="umlPhase1/DataCentre@dataCentre+umlPhase1/detectorExit@detectorExit|umlPhase1/DataCentre#dataCentre" attachSource="true" multiplicityLabel="//@children.16/@sourceConnections.3/@children.0/@children.1" roleLabel="//@children.16/@sourceConnections.3/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - dataCentre" location="290,284" size="63,14" automaticRelocationAllowed="false" locationOnWireFromSource="-49.00000000000001" distanceFromWire="-47.0" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="375,275" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="detectorExit" location="0,10" id="umlPhase1/DataCentre@dataCentre+umlPhase1/detectorExit@detectorExit|umlPhase1/detectorExit#detectorExit" multiplicityLabel="//@children.16/@sourceConnections.3/@children.1/@children.1" roleLabel="//@children.16/@sourceConnections.3/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + detectorExit" location="754,421" size="69,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="805,393" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="checksDetails" location="389,322" size="67,14" automaticRelocationAllowed="false" locationOnWireFromSource="-11.999999999999998" distanceFromWire="54.99999999999999" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
